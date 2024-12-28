@@ -7,8 +7,9 @@ export default defineUserConfig({
   base: "/harmonyos-dev/",
   lang: "en-US",
 
-  title: "VuePress",
-  description: "My first VuePress Site",
+  title: "HarmonyOS NEXT",
+  description:
+    "A comprehensive guide to developing applications with HarmonyOS NEXT - from fundamentals to advanced concepts",
 
   theme: defaultTheme({
     logo: "https://vuejs.press/images/hero.png",

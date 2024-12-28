@@ -1,11 +1,11 @@
 <script setup>
-import { useBlogCategory } from '@vuepress/plugin-blog/client'
-import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
-import { RouteLink, useRoute } from 'vuepress/client'
-import ArticleList from '../components/ArticleList.vue'
+import { useBlogCategory } from "@vuepress/plugin-blog/client";
+import ParentLayout from "@vuepress/theme-default/layouts/Layout.vue";
+import { RouteLink, useRoute } from "vuepress/client";
+import ArticleList from "../components/ArticleList.vue";
 
-const route = useRoute()
-const tagMap = useBlogCategory('tag')
+const route = useRoute();
+const tagMap = useBlogCategory("tag");
 </script>
 
 <template>
@@ -34,15 +34,16 @@ const tagMap = useBlogCategory('tag')
 </template>
 
 <style lang="scss">
-@use '@vuepress/theme-default/styles/mixins';
+@use "@vuepress/theme-default/styles/mixins";
 
 .tag-wrapper {
   @include mixins.content_wrapper;
 
-  padding-top: 1rem !important;
-  padding-bottom: 0 !important;
-
-  font-size: 14px;
+  & {
+    padding-top: 1rem !important;
+    padding-bottom: 0 !important;
+    font-size: 14px;
+  }
 
   a {
     color: inherit;
@@ -60,9 +61,7 @@ const tagMap = useBlogCategory('tag')
 
     cursor: pointer;
 
-    transition:
-      background 0.3s,
-      color 0.3s;
+    transition: background 0.3s, color 0.3s;
 
     @media (max-width: 419px) {
       font-size: 0.9rem;
