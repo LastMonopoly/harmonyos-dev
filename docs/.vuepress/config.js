@@ -4,7 +4,7 @@ import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
 
 export default defineUserConfig({
-  base: "/harmonyos-dev/",
+  // base: "/harmonyos-dev/",
   lang: "en-US",
 
   title: "HarmonyOS NEXT",
