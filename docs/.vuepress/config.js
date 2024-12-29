@@ -3,6 +3,7 @@ import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { socialSharePlugin } from "vuepress-plugin-social-share";
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 
 export default defineUserConfig({
   // base: "/harmonyos-dev/",
@@ -37,6 +38,9 @@ export default defineUserConfig({
   }),
 
   plugins: [
+    googleAnalyticsPlugin({
+      id: "G-7VGHVHVPVQ",
+    }),
     socialSharePlugin({
       networks: [
         "x",
