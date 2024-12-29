@@ -2,6 +2,7 @@ import { blogPlugin } from "@vuepress/plugin-blog";
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
+import { socialSharePlugin } from "vuepress-plugin-social-share";
 
 export default defineUserConfig({
   // base: "/harmonyos-dev/",
@@ -36,6 +37,19 @@ export default defineUserConfig({
   }),
 
   plugins: [
+    socialSharePlugin({
+      networks: [
+        "x",
+        "bluesky",
+        "reddit",
+        "whatsapp",
+        "qrcode",
+        "telegram",
+        "wechat",
+        "weibo",
+        "linkedin",
+      ],
+    }),
     blogPlugin({
       // Only files under posts are articles
       filter: ({ filePathRelative }) =>
