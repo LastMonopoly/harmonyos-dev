@@ -39,7 +39,8 @@ export default defineUserConfig({
 
   plugins: [
     googleAnalyticsPlugin({
-      id: "G-7VGHVHVPVQ",
+      id: "G-14XE7LJCDJ",
+      debug: true,
     }),
     socialSharePlugin({
       networks: [
